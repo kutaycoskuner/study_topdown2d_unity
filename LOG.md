@@ -25,13 +25,24 @@
 - test: testing
 
 # Todo
-- 01-Feb-2023 create moving character on the world
-- 01-Feb-2023 create simple word to move on
-
+- [x] 04-Feb-2023 01-Feb-2023 create moving character on the world
+- [x] 04-Feb-2023 01-Feb-2023 create simple word to move on
+- 04-Feb-2023 add: Movement animations and rotations
 
 # Procedure
+- check todo
+- enter log
+- push
 
 # Log 
+- [0.02] add: PlayerMovement ...
+    - 04-Feb-2023 PlayerMovement sliding when colliding only one direction
+    - 04-Feb-2023 PlayerMovement through unity input systems
+    - 03-Feb-2023 import tileset and create basic space to move in
+    - 03-Feb-2023 import art asset and slice the character animation frames
+    - 03-Feb-2023 create unity project in version 2022
+    - 03-Feb-2023 rename main folder to TopDown2D
+
 - [0.01] add: Project template
     - 01-Feb-2023 add base todo
     - 01-Feb-2023 project template started
