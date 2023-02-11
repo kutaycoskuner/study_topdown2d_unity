@@ -27,14 +27,26 @@
 # Todo
 - [x] 04-Feb-2023 01-Feb-2023 create moving character on the world
 - [x] 04-Feb-2023 01-Feb-2023 create simple word to move on
-- 04-Feb-2023 add: Movement animations and rotations
+- [x] 05-Feb-2023 04-Feb-2023 add: Movement animations and rotations
+- 04-Feb-2023 add: Inventory system
+- 06-Feb-2023 add: Visual studio intellisense ayarlari
+- 06-Feb-2023 add: Debugger | unity
+- 12-Feb-2023 search: Naming convention for variables and functions
 
 # Procedure
 - check todo
 - enter log
+- timelog
 - push
 
 # Log 
+- [0.03] add: Movement direction and basic attack
+    - 11-Feb-2023 BasicAttack to the enemy
+    - 10-Feb-2023 PlayerMovement hit box and left/right shift
+    - 05-Feb-2023 PlayerMovement hit animation
+    - 04-Feb-2023 PlayerMovement animation direction on left and right
+    - 04-Feb-2023 PlayerMovement idle and movement animation
+
 - [0.02] add: PlayerMovement ...
     - 04-Feb-2023 PlayerMovement sliding when colliding only one direction
     - 04-Feb-2023 PlayerMovement through unity input systems

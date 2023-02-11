@@ -1,12 +1,56 @@
 # Notebook
 
 # Links
+- game ui database referencing for ui
+    - https://www.gameuidatabase.com/
+
+- paper plane animation
+    - https://www.youtube.com/watch?v=pNek1tRkhqg
 
 # Keywords
 
 # Structure
 
 # Blackboard
+- <inventory>
+    - script: Item
+    - script: ItemData | Item | 
+        - itemid
+        - itemname
+        - category
+        - icon
+        - model
+        - prefab
+
+- <item categories>
+    - equipables
+        - apparel
+        - weapons
+        - shields
+        - tools
+        - instruments
+    - consumables
+        - potions
+        - scrolls
+        - food
+    - placeable (could only placed allowed places have long despawn time can be locked to prevent despawn)
+        - furniture
+        - oven
+        - wall
+        - seeds
+    - interractables
+        - letters
+        - books
+        - runes
+    - material
+        - seed
+        - ingredient (herbs and food material)
+        - metals
+        - gems
+    - misc
+        - keys
+        - gold
+
 - <size of character sheets>
     - 8x8 16x16 32x32 48x48
     - keywords
@@ -64,6 +108,27 @@
         - on palyer go add component rigidbody2d
             - set bodytype to kinematic
         - onplayer go add component box collider2d
+- <character animation>
+    - on player folder rigt click create animator controller
+    - add animator component to player
+    - window > animation > animation
+    - window > animation > animator
+    - create new folder animations
+    - select images with shift drag to animation window
+    - create another animation
+    - select animator
+    - create parameter from left
+    - create links between states
+        - conditions add parameter
+        - disable has exit time
+        - transition duration 0
+    - open script'
+
+- <adding follow camera>
+    - package manager: cinemachine
+    - top menu > gameobject > cinemachine > 2d camera
+    - virtual camera > follow > plaeyer
+    - virtual camera > select pixelperfectextension
 
 
 # How to
