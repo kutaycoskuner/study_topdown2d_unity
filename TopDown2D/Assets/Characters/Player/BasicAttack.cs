@@ -43,7 +43,7 @@ public class BasicAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("touched");
+        // print("touched");
         if (other.tag == "Enemy")
         {
             // todo deal damage to the enemy

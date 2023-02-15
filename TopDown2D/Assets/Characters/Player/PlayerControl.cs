@@ -18,7 +18,10 @@ public class PlayerControl : MonoBehaviour
     // ---- 
     bool isMovementLocked;
 
-    // ---- components --------------------------------------------------------
+    // ----- inventory --------------------------------------------------------
+    // public Inventory inventory;
+
+    // ----- components -------------------------------------------------------
     public BasicAttack basicAttack;
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -26,12 +29,19 @@ public class PlayerControl : MonoBehaviour
     SpriteRenderer spriteRenderer;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
+    // ------------------------------------------------------------------------
+    // ----- Serializations ---------------------------------------------------
+    // ------------------------------------------------------------------------
+    // [SerializeField] private UI_Inventory uiInventory;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        // inventory = new Inventory();
     }
 
     // Update is called once per frame
@@ -143,6 +153,15 @@ public class PlayerControl : MonoBehaviour
     public void UnlockMovement()
     {
         isMovementLocked = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // print("touched");
+        if (collision.tag == "Interractable")
+        {
+            Debug.Log("Interract!");
+        }
     }
 
 }

@@ -4,17 +4,53 @@
 - game ui database referencing for ui
     - https://www.gameuidatabase.com/
 
+- what is interface
+    - https://www.youtube.com/watch?v=MZOrGXk4XFI
+
 - paper plane animation
     - https://www.youtube.com/watch?v=pNek1tRkhqg
+
+- unity good naming convention
+    - https://stackoverflow.com/questions/24586319/what-is-a-good-naming-convention-for-unity
 
 # Keywords
 
 # Structure
 
 # Blackboard
+- <interface>
+    - data bulundurmamasi gereken bir sey
+    - arayuzu
+    - o class ile nasil etkilestiyorsun
+    - fonksiyon cagrilarini bir araya topluyor
+
+- <Naming conventions>
+    - snake_case, camelCase, PascalCase
+    - folder names PascalCase
+    - class variables camelCase
+    - id kisaltmasi buyuk yaziliyor ex: ID
+    - Classes and functions are PascalCase
+    - file names
+        - category names: ex. Animator Controllers AC_name
+        - A for abstract class A_Item
+        - I for interface I_Interface
+    - 
+
+- <image conventions>
+    - item placeholder 
+        - stroke 6px #000, fill #fff
+        - name: a_itemName
+
 - <inventory>
+    - acquiring methods
+        - pick up
+        - gather
+        - loot
+        - steal
+        - craft
     - script: Item
     - script: ItemData | Item | 
+    - inventory ui, shop iu, container ui, crafting ui
         - itemid
         - itemname
         - category

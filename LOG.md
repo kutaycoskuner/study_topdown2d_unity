@@ -28,10 +28,14 @@
 - [x] 04-Feb-2023 01-Feb-2023 create moving character on the world
 - [x] 04-Feb-2023 01-Feb-2023 create simple word to move on
 - [x] 05-Feb-2023 04-Feb-2023 add: Movement animations and rotations
+- [x] 14-Feb-2023 14-Feb-2023 learn: adding interfaces in unity
 - 04-Feb-2023 add: Inventory system
 - 06-Feb-2023 add: Visual studio intellisense ayarlari
 - 06-Feb-2023 add: Debugger | unity
 - 12-Feb-2023 search: Naming convention for variables and functions
+- 12-Feb-2023 design a level
+- 13-Feb-2023 learn: composition bak
+- 14-Feb-2023 learn: storing data(objects & lists) with json 
 
 # Procedure
 - check todo
@@ -40,7 +44,21 @@
 - push
 
 # Log 
-- [0.03] add: Movement direction and basic attack
+- [0.05]
+    - inventory system
+        - inventory sytem
+    - design a level
+    - refactor inventory elements
+
+- [0.04] add: Basic UI, Draggable objects
+    - 15-Feb-2023 add: Inventory drag and drop mechanism
+    - 15-Feb-2023 add: Inventory open/close button
+    - 15-Feb-2023 arch: UI organization
+    - 15-Feb-2023 add: ActionBar, Inventory frames
+    - 14-Feb-2023 add: Inventory ui with placeholder image
+    - 13-Feb-2023 wip: UI Inventory
+
+- [0.03] add: Movement direction, Basic attack
     - 11-Feb-2023 BasicAttack to the enemy
     - 10-Feb-2023 PlayerMovement hit box and left/right shift
     - 05-Feb-2023 PlayerMovement hit animation
