@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class test_Interface : MonoBehaviour 
+public class I_TestInterface : MonoBehaviour 
 {
     private void Start()
     {

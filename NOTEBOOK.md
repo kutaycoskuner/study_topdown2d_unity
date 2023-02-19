@@ -13,11 +13,34 @@
 - unity good naming convention
     - https://stackoverflow.com/questions/24586319/what-is-a-good-naming-convention-for-unity
 
+- game programming patterns
+    - https://gameprogrammingpatterns.com/architecture-performance-and-games.html
+
+- unity inventory definitive tutorial
+    - https://www.youtube.com/watch?v=oJAE6CbsQQA&t=1179s
+
+- 2d grid building system
+    - https://www.youtube.com/watch?v=G2w78Xk6UhU&t=0s
+
+- jayanam inventory
+    - https://www.youtube.com/watch?v=Hj7AZkyojdo&list=PLOyj0nn-asmaqBZ_hGoCh-PBlraNaHLyA&index=8
+
 # Keywords
 
 # Structure
 
 # Blackboard
+- <computer science>
+    - what is static
+
+- <visual studio>
+    - ctrl > m + o  collapse all functions
+    - ctrl > k + u  uncomment
+    - ctrl > k + c  comment out
+    - f9 debug breakpoint add remove
+    - f5 continue
+    - ctrl alt a callstack?
+
 - <interface>
     - data bulundurmamasi gereken bir sey
     - arayuzu
@@ -28,12 +51,20 @@
     - snake_case, camelCase, PascalCase
     - folder names PascalCase
     - class variables camelCase
-    - id kisaltmasi buyuk yaziliyor ex: ID
+    - often used two words written as one single word: 
+        - ex. Pickup, Unregister, Id
+    - bool variables is, does, exists start with 
+        - ex. b_textActive
+    - display element variables starts with 
+        - display_text 
     - Classes and functions are PascalCase
     - file names
         - category names: ex. Animator Controllers AC_name
         - A for abstract class A_Item
         - I for interface I_Interface
+        - S for system S_Inventory
+        - T for test    T_Test
+        - D for data class
     - 
 
 - <image conventions>
@@ -42,7 +73,8 @@
         - name: a_itemName
 
 - <inventory>
-    - acquiring methods
+    - interaction methods
+        - inspect
         - pick up
         - gather
         - loot

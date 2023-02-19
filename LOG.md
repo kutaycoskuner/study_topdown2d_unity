@@ -29,13 +29,22 @@
 - [x] 04-Feb-2023 01-Feb-2023 create simple word to move on
 - [x] 05-Feb-2023 04-Feb-2023 add: Movement animations and rotations
 - [x] 14-Feb-2023 14-Feb-2023 learn: adding interfaces in unity
-- 04-Feb-2023 add: Inventory system
+- [x] 17-Feb-2023 04-Feb-2023 add: Inventory system drag&drop, pickup&drop system, inventory manager, test interface
+- [p] 16-Feb-2023 12-Feb-2023 search: Naming convention for variables and functions
+- [x] 20-Feb-2023 18-Feb-2023 learn: static, events, and listeners
+- [x] 20-Feb-2023 17-Feb-2023 add: Inventory world drop
 - 06-Feb-2023 add: Visual studio intellisense ayarlari
 - 06-Feb-2023 add: Debugger | unity
-- 12-Feb-2023 search: Naming convention for variables and functions
 - 12-Feb-2023 design a level
 - 13-Feb-2023 learn: composition bak
 - 14-Feb-2023 learn: storing data(objects & lists) with json 
+- 15-Feb-2023 add: light radius on player
+- 16-Feb-2023 add: Time system
+- 16-Feb-2023 add: databases, items, spells
+- 16-Feb-2023 add: Point click building system (altering environment)
+- 16-Feb-2023 add: Crafting System
+- 16-Feb-2023 learn: Manager mimarilerini incele/topla/yok et
+- 20-Feb-2023 add: Inventory save data
 
 # Procedure
 - check todo
@@ -44,11 +53,22 @@
 - push
 
 # Log 
-- [0.05]
-    - inventory system
-        - inventory sytem
+- [0.06]
+    - inventory save
     - design a level
-    - refactor inventory elements
+    - refactor inventory 
+    - time system
+
+- [0.05] add: Inventory system prototype
+    - 20-Feb-2023 add: Drop inventory item / pick up world item
+    - 19-Feb-2023 add: Events to WorldItem
+    - 18-Feb-2023 add: Spawn world item
+    - 16-Feb-2023 add: Inventory Pickup item
+    - 16-Feb-2023 add: Inventory item stacking
+    - 16-Feb-2023 add: Inventory manager script add item function
+    - 16-Feb-2023 add: Item script
+    - 16-Feb-2023 add: TestInsertation ui for quick testing
+    - 16-Feb-2023 add: origami test assets
 
 - [0.04] add: Basic UI, Draggable objects
     - 15-Feb-2023 add: Inventory drag and drop mechanism

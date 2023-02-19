@@ -3,14 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+
+
     [Header("UI")]
     public Image image;
-    [HideInInspector] public Transform parentAfterDrag;
+    public TextMeshProUGUI stackDisplay;
+    // [HideInInspector] public Item item;
+    public Item item;
+    [HideInInspector] public int stack = 1;
+    [HideInInspector] public static Transform parentAfterDrag;
+
+    private void Start()
+    {
+        InitializeItem(item);
+    }
+
+    public void InitializeItem(Item newItem)
+    {
+        item = newItem;
+        image.sprite = newItem.image;
+        UpdateStack();
+    }
+
+    public void UpdateStack()
+    {
+        stackDisplay.text = stack.ToString();
+        bool b_textActive = stack > 1;
+        stackDisplay.gameObject.SetActive(b_textActive);
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
+        //Debug.Log(this.item.itemName);
+        S_Inventory.pickedInventoryItem = this;
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
@@ -24,8 +53,16 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.SetParent(parentAfterDrag);
-        image.raycastTarget = true;
+        if (parentAfterDrag == null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            transform.SetParent(parentAfterDrag);
+            image.raycastTarget = true;
+        }
+        S_Inventory.pickedInventoryItem = null;
     }
 }
 

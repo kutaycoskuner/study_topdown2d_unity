@@ -18,7 +18,8 @@ public class PlayerControl : MonoBehaviour
     // ---- 
     bool isMovementLocked;
 
-    // ----- inventory --------------------------------------------------------
+    // ----- managers ---------------------------------------------------------
+    public S_ObjectInteraction pickupManager;
     // public Inventory inventory;
 
     // ----- components -------------------------------------------------------
@@ -157,11 +158,14 @@ public class PlayerControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // print("touched");
-        if (collision.tag == "Interractable")
-        {
-            Debug.Log("Interract!");
-        }
+        pickupManager.HandlePlayerCollision(collision);
+        //I_Pickup item = collision.GetComponent<I_Pickup>();
+        //if (item == null) { return; }
+        //item.Pickup();
+        //if (collision.tag == "Interractable")
+        //{
+        //    Debug.Log("Interract!");
+        //}
     }
 
 }

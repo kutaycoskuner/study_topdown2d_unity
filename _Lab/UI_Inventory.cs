@@ -23,7 +23,7 @@ public class UI_Inventory : MonoBehaviour
         // float itemSLotCellSize = 30f;
         foreach (Item item in inventory.GetItemList())
         {
-            Debug.Log("Test" + item);
+            // Debug.Log("Test" + item);
             // RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             // itemSlotRectTransform.gameObject.setActive(true);
         }
