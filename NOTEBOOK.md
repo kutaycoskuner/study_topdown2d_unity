@@ -4,6 +4,9 @@
 - game ui database referencing for ui
     - https://www.gameuidatabase.com/
 
+- day/night color scheme
+    - https://codepen.io/bork/pen/WNrmWr
+
 - what is interface
     - https://www.youtube.com/watch?v=MZOrGXk4XFI
 
@@ -25,11 +28,119 @@
 - jayanam inventory
     - https://www.youtube.com/watch?v=Hj7AZkyojdo&list=PLOyj0nn-asmaqBZ_hGoCh-PBlraNaHLyA&index=8
 
+- time system unity
+    - https://www.youtube.com/watch?v=Y_AOfPupWhU
+    - https://www.youtube.com/watch?v=0nq1ZFxuEJY
+
+- shader
+    - realtime toon shader and outline blender 2.8 eve
+        - https://www.youtube.com/watch?v=QLSZRfcUiQI
+    - blender pixel art 1 min
+        - https://www.youtube.com/watch?v=8uleyXAYl8E
+    - Animated PIXEL ART Characters Sprites
+        - https://www.youtube.com/watch?v=eSqb6II3WMM
+
+- grass references
+    - https://www.youtube.com/watch?v=aZ64y2-4xWQ
+    - https://www.youtube.com/watch?v=Zp48BBbYLpA
+
+# Artstyle refrences
+- graveyard keeper
+
 # Keywords
+- toon shader
+- outline shader
+- pixel art shader
+- cel shader
+- halftone effect
 
 # Structure
 
 # Blackboard
+- <blender camera settings>
+    - orthographic
+    - loc: x0, y-7.7, y11.6
+    - rot: x36
+
+- <animation for 2d charaters>
+    - select every keyframe press t for interpolation | set constant
+    - character has animation for every 15 degree
+    - every angle has 8 frame animation
+    - total 193 frame
+    - camera keyframes 45 -> 25, 49, 73, 97, 121, 145, 169, 193 (8*3n+1)
+    - 72 pixel 8 frame dope sheet animation 576 
+
+- <geometry nodes>
+    - prodecural damage
+
+- <effects>
+    - lens flare
+    - god rays
+    - rain drop ticks
+    - leave glow
+    - 
+
+- <model making stones>
+
+- <blender pixel setup>
+    - set mataterial
+    - res x y = 256
+    - compression 0
+    - samping 1
+    - transparent
+
+    - evee
+    - 10 times of desired res 1280x1280
+    - film transparent
+    - filter size 0
+    - color management view transform : standard
+    - reduce radius on light
+    - orthographic perspective
+    - rotation x 65 z 45
+    - add empty and parent to camera to control
+    - compositor add 2 scale and pixelate inbetween
+    - add free style
+    - view layer properties
+
+- <solid test on blender>
+    - https://blender.stackexchange.com/questions/48/what-is-the-simplest-way-to-generate-a-dodecahedron
+    - edit > pref > addon > extra objects mesh
+    - add > mesh > math functino > regular solid
+
+- <org: categories>
+    - sound
+    - programming
+    - graphics
+    - story
+    - mechanics
+
+- <gradient daynight scale>
+    - 082955
+    - f9cd7f
+    - fbf4f3
+    - f2eab6
+    - eeb786
+    - f37b5e
+    - 2a2554
+
+- <universal render pipeline>
+    - window > package manager > search universal render pipeline
+    - project > create > rendering > universal render pipeline > forward
+    - edit > project settings > graphics: select uni rp
+
+- <mindwork: bars>
+    - static: health, mana, stamina, cast
+    - dynamic: enemy health bar, construction bar
+
+- <mindwork: time system ui>
+    - hava tipini gorsel olarak gosteren ikon ve saat
+    - gun, ay tarih, saat, hava durumu ikonu
+
+- <mindwork: inventory save>
+    - player in inventorisine dair item listesi tut
+        - item unique idsi, inventory pozisyonu
+
+
 - <computer science>
     - what is static
 
@@ -141,6 +252,9 @@
     - combat stance
 
 # Procedure
+- <wind effect>
+    - create > shader > splite lit graph
+
 - create art folder
 - open character sprite sheet on inspector
     - advanced > filter mode: point (no filter)

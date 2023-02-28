@@ -33,18 +33,19 @@
 - [p] 16-Feb-2023 12-Feb-2023 search: Naming convention for variables and functions
 - [x] 20-Feb-2023 18-Feb-2023 learn: static, events, and listeners
 - [x] 20-Feb-2023 17-Feb-2023 add: Inventory world drop
+- [x] 21-Feb-2023 16-Feb-2023 add: Time system
 - 06-Feb-2023 add: Visual studio intellisense ayarlari
 - 06-Feb-2023 add: Debugger | unity
 - 12-Feb-2023 design a level
 - 13-Feb-2023 learn: composition bak
 - 14-Feb-2023 learn: storing data(objects & lists) with json 
 - 15-Feb-2023 add: light radius on player
-- 16-Feb-2023 add: Time system
 - 16-Feb-2023 add: databases, items, spells
 - 16-Feb-2023 add: Point click building system (altering environment)
 - 16-Feb-2023 add: Crafting System
 - 16-Feb-2023 learn: Manager mimarilerini incele/topla/yok et
 - 20-Feb-2023 add: Inventory save data
+- 20-Feb-2023 suggestion: black hole slot inventory
 
 # Procedure
 - check todo
@@ -53,11 +54,23 @@
 - push
 
 # Log 
-- [0.06]
-    - inventory save
+- [0.07]
+    - procedural stones blender nodes
+    - moving foliage shader
+    - inventory saving / holding names ids of items
     - design a level
     - refactor inventory 
-    - time system
+    - renderer 
+        - pixel art renderer in unity/blender
+        - add checkerboard
+        - inner borders light / outer borders dark
+
+- [0.06] add: Time system ...
+    - 21-Feb-2023 wip: Self placeholder animation sheets
+    - 21-Feb-2023 add: art: Testing pixel shaders
+    - 21-Feb-2023 add: TimeSystem day/night cycle with universal lighting pipeline light2d
+    - 21-Feb-2023 add: TimeSystem with customevents
+    - 20-Feb-2023 add: Added scale manipulation on item drop
 
 - [0.05] add: Inventory system prototype
     - 20-Feb-2023 add: Drop inventory item / pick up world item

@@ -9,15 +9,16 @@ public class WorldItem : MonoBehaviour, I_Pickup
     //public static event Action OnPickup;
     public EventInventoryPickup OnPickup = new EventInventoryPickup();
     public static EventWorldItemSpawn OnSpawn = new EventWorldItemSpawn();
-    public Item item;
+    public ItemData item;
     //public S_Inventory inventory;
 
-    public static WorldItem SpawnItem(Item item, Vector3 position)
+    public static WorldItem SpawnItem(ItemData item, Vector3 position)
     {
         Transform obj = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
         WorldItem worldItem = obj.GetComponent<WorldItem>();
-        obj.GetComponent<WorldItem>().item = item;
-        obj.GetComponent<WorldItem>().GetComponent<SpriteRenderer>().sprite = item.image;
+        worldItem.item = item;
+        worldItem.GetComponent<SpriteRenderer>().sprite = item.image;
+        obj.localScale = new Vector3(obj.localScale.x, obj.localScale.y * .75f, obj.localScale.z);
         OnSpawn.Invoke(obj.GetComponent<WorldItem>());
         return worldItem;
     }
@@ -27,7 +28,7 @@ public class WorldItem : MonoBehaviour, I_Pickup
         gameObject.GetComponent<SpriteRenderer>().sprite = item.image;
     }
 
-    public void SetItem(Item item)
+    public void SetItem(ItemData item)
     {
         this.item = item;
     }

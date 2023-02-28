@@ -1,6 +1,6 @@
 using UnityEngine.Events;
 
-public class EventInventoryPickup : UnityEvent<Item> { }
+public class EventInventoryPickup : UnityEvent<ItemData> { }
 
 public class EventWorldItemSpawn : UnityEvent<WorldItem> { }
 

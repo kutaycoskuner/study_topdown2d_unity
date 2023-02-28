@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class T_TestInsertation : MonoBehaviour
 {
-    public S_Inventory inventoryManager;
-    public Item[] itemsToPickup;
+    public Inventory inventoryManager;
+    public ItemData[] itemsToPickup;
 
     public void PickupItem() 
     {
         int rng = Random.Range(0, itemsToPickup.Length);
-        Item item = itemsToPickup[rng];
+        ItemData item = itemsToPickup[rng];
         float rng1 = Random.Range(-0.9f, 0.9f);
         float rng2 = Random.Range(-0.9f, 0.9f);
         //WorldItem worldItem = WorldItem.SpawnItem( item , new Vector3(rng1, rng2));

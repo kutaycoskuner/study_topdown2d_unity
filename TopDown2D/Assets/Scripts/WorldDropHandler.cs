@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropHandler : MonoBehaviour, IDropHandler
+public class WorldDropHandler : MonoBehaviour, IDropHandler
 {
     public Camera mainCamera;
-    public GameObject player;
 
     void Start()
     {
@@ -19,7 +18,7 @@ public class DropHandler : MonoBehaviour, IDropHandler
         Vector3 dropPosition = GetWorldCursorWorldPosition();
         //Debug.Log(dropPosition);
         InventoryItem.parentAfterDrag = null;
-        S_Inventory.DropItem(dropPosition);
+        Inventory.DropItem(dropPosition);
 
     }
 

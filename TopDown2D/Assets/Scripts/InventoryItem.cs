@@ -13,7 +13,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public Image image;
     public TextMeshProUGUI stackDisplay;
     // [HideInInspector] public Item item;
-    public Item item;
+    public ItemData item;
     [HideInInspector] public int stack = 1;
     [HideInInspector] public static Transform parentAfterDrag;
 
@@ -22,7 +22,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         InitializeItem(item);
     }
 
-    public void InitializeItem(Item newItem)
+    public void InitializeItem(ItemData newItem)
     {
         item = newItem;
         image.sprite = newItem.image;
@@ -39,7 +39,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         //Debug.Log(this.item.itemName);
-        S_Inventory.pickedInventoryItem = this;
+        Inventory.pickedInventoryItem = this;
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
@@ -62,7 +62,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             transform.SetParent(parentAfterDrag);
             image.raycastTarget = true;
         }
-        S_Inventory.pickedInventoryItem = null;
+        Inventory.pickedInventoryItem = null;
     }
 }
 

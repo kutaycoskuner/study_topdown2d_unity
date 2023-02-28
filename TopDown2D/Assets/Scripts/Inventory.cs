@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class S_Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
     public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
@@ -42,7 +42,7 @@ public class S_Inventory : MonoBehaviour
         }
     }
 
-    public void AddItem(Item item)
+    public void AddItem(ItemData item)
     {
         // check if any slot has the same item with count lower than max
         foreach (InventorySlot slot in inventorySlots)
@@ -67,7 +67,7 @@ public class S_Inventory : MonoBehaviour
         //return false;
     }
 
-    private void PlaceNewItem(Item item, InventorySlot slot)
+    private void PlaceNewItem(ItemData item, InventorySlot slot)
     {
         GameObject newItemGO = Instantiate(inventoryItemPrefab, slot.transform);
         InventoryItem inventoryItem = newItemGO.GetComponent<InventoryItem>();
@@ -80,7 +80,7 @@ public class S_Inventory : MonoBehaviour
         WorldItem.SpawnItem(pickedInventoryItem.item, position);
     }
 
-    public void UseItem(Item item)
+    public void UseItem(ItemData item)
     {
     }
 }

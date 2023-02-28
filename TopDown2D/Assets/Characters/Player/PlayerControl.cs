@@ -19,7 +19,7 @@ public class PlayerControl : MonoBehaviour
     bool isMovementLocked;
 
     // ----- managers ---------------------------------------------------------
-    public S_ObjectInteraction pickupManager;
+    public WorldPickupHandler pickupManager;
     // public Inventory inventory;
 
     // ----- components -------------------------------------------------------
